@@ -1,30 +1,18 @@
-# Fildem
-
-## Global menu for Gnome
-
-[![Buy Me A Coffee](https://img.shields.io/badge/buy%20me%20a%20coffee-donate-yellow.svg)](https://buymeacoffee.com/gonza)
+# Global Menu for Gnome
 
 ![Fildem](https://user-images.githubusercontent.com/19943481/95288612-1d272a80-083f-11eb-9400-be88f61e054d.png)
 
-This project is a fork of gnomehud with the addition of a global menu bar. It consists of a Gnome Shell extension and an external program, you must install both for the application to work.
-
-You can also bring a HUD menu with Alt + Space (on Xorg).
-
-This is a prototype, as I don’t know if people will like it or how long it will last until devs nuke it, so feel free to let me know your opinion.
-
 ## Installation
-
-### Extension
-
-To install the extension, download it from the [Gnome extensions website](https://extensions.gnome.org/extension/4114/fildem-global-menu/).
-
-### Ubuntu
-
-Download the .deb file from the releases section and run `sudo apt install ./fildem_*.deb`
 
 ### Arch
 
-Download the .zst file from the releases section and run `sudo pacman -U ./python3-fildem*.zst`
+Run `sudo pacman -S python-fildem`
+
+
+### Extension
+
+`git clone https://github.com/corneal64/Gnome-Global-Menu.git && cd Gnome-Global-Menu && cp -r fildemGMenu@gonza.com ~/.local/share/gnome-shell/extensions/`
+
 
 ## Configuration
 
@@ -79,10 +67,3 @@ If you manage to make the program work and want to have it running automatically
 
 Since it’s not possible to create a shortcut from the app on Wayland, you have to create it yourself. Go to Settings → Keyboard Shorcuts and create a shortcut that executes `inithud.sh`.
 
-## State of the Apps
-
-To see a list of apps that work check [the wiki](https://github.com/gonzaarcr/Fildem/wiki/Using#state-of-the-apps)
-
-## Installation troubleshooting
-
-If you have any questions on how to get it to work, please don’t create an issue, use [this discussion](https://github.com/gonzaarcr/Fildem/discussions/33).
